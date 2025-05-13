@@ -1,0 +1,28 @@
+@use "variables" as *;
+
+#text-container {
+  font-size: 3rem;
+  background-color: $primary-color;
+  padding: 0.25rem;
+  font-family: $font-mono;
+  white-space: pre;
+  display: flex;
+  align-items: center;
+}
+
+#cursor {
+  display: inline-block;
+  width: 1ch;
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}

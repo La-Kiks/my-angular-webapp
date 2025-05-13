@@ -1,0 +1,20 @@
+@use "sass:color"; // npm install -g sass
+
+// 🎨 Color palette
+$primary-color: #f7e74d;
+$primary-hover: color.scale($primary-color, $lightness: -20%, $space: hsl);
+$secondary-color: #9ba0a8;
+$text-color: #374151;
+$background-color: #f8f8f8;
+
+// 🧱 Spacing
+$base-padding: 1rem;
+$base-margin: 1rem;
+$hd-height: 720px;
+$hd-width: 1280px;
+$sd-height: 360px;
+$sd-width: 640px;
+
+// 🔤 Typography
+$font-stack: "Segoe UI", Roboto, sans-serif;
+$font-mono: "Fira Code", monospace;

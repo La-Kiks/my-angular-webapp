@@ -1,0 +1,22 @@
+@use "variables" as *;
+
+.simple-btn {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background-color: $background-color;
+  color: $text-color;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.simple-btn:hover {
+  background-color: $primary-color;
+  color: $text-color;
+}
+
+.simple-btn.active {
+  background-color: $primary-color;
+  color: $text-color;
+}

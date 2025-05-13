@@ -1,0 +1,106 @@
+@use "variables" as *;
+
+.primary-color {
+  color: $primary-color;
+}
+
+.bg-primary-color {
+  background-color: $primary-color;
+  padding: 0.25rem;
+}
+
+.font-mono {
+  font-family: $font-mono;
+}
+
+.title-lg {
+  font-size: 3rem;
+}
+
+.font-stack {
+  font-family: $font-stack;
+}
+
+.hover-primary:hover {
+  color: $primary-hover;
+}
+
+a > svg {
+  margin-top: 0.5rem;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  padding: $base-padding;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  padding: $base-padding;
+}
+
+.top {
+  justify-content: start;
+  align-items: start;
+}
+
+.no-margin {
+  margin: 0px;
+}
+
+.no-padding {
+  padding: 0px;
+}
+
+.space {
+  justify-content: space-around;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.mx-base {
+  margin-right: $base-margin;
+  margin-left: $base-margin;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.title {
+  width: $sd-width;
+  align-items: center;
+}
+
+.profile {
+  width: auto;
+  min-width: 300px; // TODO
+  height: 200px;
+}
+
+.simple-btn {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background-color: $background-color;
+  color: $text-color;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.simple-btn:hover {
+  background-color: $primary-color;
+  color: $text-color;
+}
+
+.simple-btn.active {
+  background-color: $primary-color;
+  color: $text-color;
+}

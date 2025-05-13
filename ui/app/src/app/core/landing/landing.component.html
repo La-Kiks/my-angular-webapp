@@ -1,0 +1,40 @@
+<section>
+    <div class="flex space">
+        <div class="flex-col top">
+            <h1 class="font-stack no-margin title-lg">Kilian Audroin</h1>
+            <app-typed-text></app-typed-text>
+            <p>Full-stack, adepte de PHP Symfony ainsi que du combo .NET Angular. <br> J'ai soif de savoir et recherche
+                de nouveaux défis ! </p>
+        </div>
+        <div class="profile flex center" style="background-color: aqua;">
+            PLACEHOLDER
+        </div>
+    </div>
+</section>
+<section>
+    <div class="flex mx-auto title no-margin no-padding">
+        <a> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="15 18 9 12 15 6" />
+            </svg>
+        </a>
+        <h2 class="font-mono"><u>Projects</u></h2>
+        <a> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="9 18 15 12 9 6" />
+            </svg>
+        </a>
+    </div>
+    <div class="button-group flex mx-auto title space no-margin no-padding">
+        <button *ngFor="let btn of buttons; index as i" class="simple-btn" [class.active]="selectedButton === i"
+            (click)="selectCard(i)">
+            {{ btn }}
+        </button>
+
+    </div>
+    <div style="position: relative;" *ngFor="let card of cards; let i = index">
+        <app-card [class.active]="selectedCard === i" [class.exit]="exitingCard === i" [thumbnail]="card.thumbnail"
+            [numero]="card.numero" [title]="card.title" [description]="card.description" [url]="card.url">
+        </app-card>
+    </div>
+</section>

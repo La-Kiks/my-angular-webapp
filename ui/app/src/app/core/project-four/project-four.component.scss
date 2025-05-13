@@ -1,0 +1,81 @@
+@use "variables" as *;
+
+.project-background {
+  min-height: 100vh;
+  background: linear-gradient(145deg, #ffffff, #f9f9f9);
+  padding: 1rem;
+}
+
+section > h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0.5rem;
+  font-family: $font-mono;
+  font-size: 3rem;
+}
+
+section > p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 0.25rem;
+  font-family: $font-stack;
+  font-size: 1rem;
+}
+
+section > p > span {
+  padding: 0.25rem;
+  background-color: $primary-color;
+}
+
+.spacer-horizontal {
+  height: 1px;
+  background: $secondary-color;
+  margin: 1.5rem auto;
+  width: 66%;
+}
+
+.demo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 1rem auto;
+  background-color: aquamarine;
+  height: $sd-height;
+  width: $sd-width;
+}
+
+.horizontal-container {
+  min-height: 100px;
+  margin: 0.25rem auto;
+  gap: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  text-align: left;
+}
+
+.left {
+  flex: 2;
+}
+
+.right {
+  flex: 1;
+}
+
+.spacer-vertical {
+  width: 1px;
+  height: 6rem;
+  background-color: $secondary-color;
+  align-self: center;
+}
+
+.no-margin {
+  margin: 0px;
+}
