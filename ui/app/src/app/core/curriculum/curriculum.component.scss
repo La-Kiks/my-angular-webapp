@@ -15,7 +15,7 @@
   height: 297mm;
   padding: 0;
   box-sizing: border-box;
-  background: $background-color;
+  background: white;
   display: flex;
   flex-direction: row;
   margin: auto;
@@ -100,7 +100,7 @@
 
 .exp-item,
 .grid-item {
-  background-color: $background-color;
+  background-color: white;
   padding: 0.5rem;
 }
 
