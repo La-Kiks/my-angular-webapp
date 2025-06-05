@@ -1,0 +1,153 @@
+@use "variables" as *;
+
+@media print {
+  .a4-page {
+    margin: 0;
+    box-shadow: none;
+    page-break-after: always;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
+
+.a4-page {
+  width: 210mm;
+  height: 297mm;
+  padding: 0;
+  box-sizing: border-box;
+  background: $background-color;
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.left-column {
+  width: 33%;
+  height: 100%;
+  background-color: $light-yellow;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.right-column {
+  width: 67%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.left-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.left-column li {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.picture {
+  height: 250px;
+  width: auto;
+  background-color: grey;
+}
+
+.spacer-title {
+  background-color: $light-yellow;
+  padding: 0.25rem;
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
+  height: 20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border: 1px solid $secondary-color;
+}
+
+.spacer-title h2 {
+  font-family: $font-stack;
+  font-size: large;
+  font-weight: 600;
+  margin: 0;
+  margin-left: 1rem;
+}
+
+.head {
+  margin: 0;
+  padding: 0;
+}
+
+.head h1 {
+  font-family: $font-stack;
+  font-weight: 600;
+  margin: 0.5rem;
+}
+
+.head h2 {
+  font-family: $font-mono;
+  margin: 0.5rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.exp-item,
+.grid-item {
+  background-color: $background-color;
+  padding: 0.5rem;
+}
+
+.grid-item h4,
+.exp-item h4,
+.grid-item h5,
+.exp-item h5,
+.grid-item h6,
+.exp-item h6,
+.grid-item p,
+.exp-item p {
+  margin: 0;
+  padding: 0;
+}
+
+.exp-item h4,
+.grid-item h4 {
+  font-weight: 600;
+  font-size: medium;
+}
+
+.exp-item h5,
+.grid-item h5 {
+  font-weight: 500;
+  font-size: small;
+}
+
+.exp-item h6,
+.grid-item h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 400;
+  font-size: x-small;
+}
+
+.exp-item p,
+.grid-item p {
+  font-weight: 400;
+  font-size: smaller;
+}
+
+.exp-item ul {
+  padding-left: 1rem;
+  margin: 0.25rem;
+}
+
+.exp-item ul li {
+  font-size: smaller;
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+}
