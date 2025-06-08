@@ -1,0 +1,12 @@
+@use "variables" as *;
+
+.back-button {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.back-button:hover {
+  opacity: 0.85;
+}

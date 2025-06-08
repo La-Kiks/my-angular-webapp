@@ -22,7 +22,7 @@ export class LandingComponent {
   buttons = ['Project 1', 'Project 2', 'Project 3', 'Project 4'];
   cards = [
     {
-      thumbnail: "placeholder", numero: "01", title: "Card One", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.", url: "project - one"
+      thumbnail: "640px x 180px", numero: "01", title: "Card One", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.", url: "project-one"
     },
     { thumbnail: "placeholder", numero: "02", title: "Card Two", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi.", url: "project-two" },
     { thumbnail: "placeholder", numero: "03", title: "Card Three", description: "This is card max 300 char", url: "project-three" },
