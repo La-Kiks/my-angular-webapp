@@ -50,9 +50,12 @@ section > p > span {
   align-items: center;
   text-align: center;
   margin: 1rem auto;
-  background-color: aquamarine;
+  background-color: $light-yellow;
   height: $sd-height;
   width: $sd-width;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
 }
 
 .horizontal-container {
@@ -77,11 +80,22 @@ section > p > span {
 
 .spacer-vertical {
   width: 1px;
-  height: 6rem;
+  height: 200px;
   background-color: $secondary-color;
   align-self: center;
 }
 
 .no-margin {
   margin: 0px;
+}
+
+.description ul {
+  padding-left: 1rem;
+  margin: 0.25rem;
+}
+
+.description ul li {
+  font-size: medium;
+  font-weight: 400;
+  margin-bottom: 0.25rem;
 }

@@ -1,11 +1,11 @@
 <div class="main">
     <div class="card">
-        <div class="thumbnail">{{ thumbnail }}</div>
+        <img class="thumbnail" [src]="thumbnail" alt="Image representing the project">
         <div class="content">
             <h2> {{ numero }} </h2>
             <h3> {{ title }} </h3>
             <p> {{ description }} </p>
-            <a routerLink="{{ url }}"> More... </a>
+            <a [routerLink]="url"> Détails </a>
         </div>
     </div>
 </div>

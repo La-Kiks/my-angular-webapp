@@ -54,12 +54,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  object-fit: cover;
   width: $sd-width;
   height: 180px;
-  padding: 20px;
-  text-align: center;
+  padding: 0px;
+  margin: 0;
   opacity: 1;
-  background-color: aquamarine;
+  background-color: $light-yellow;
   z-index: 0;
   transition: 0.5s;
 }

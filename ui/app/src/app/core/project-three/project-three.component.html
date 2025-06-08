@@ -1,25 +1,33 @@
 <section class="project-background">
-    <h2> Project Three </h2>
-    <p><span>Small text</span></p>
+    <app-default-button route="/" label="Back" backgroundColor="#DC143C" textColor='#fffff0'></app-default-button>
+    <h2>Lolprodraft</h2>
+    <p><span>
+            Jeu tour par tour qui utilise les websockets pour simuler une 'draft', similaire à celle du jeu League of
+            Legends.
+        </span></p>
     <div class="spacer-horizontal"></div>
-    <div class="demo">PLACEHOLDER</div>
+    <img class="demo" src="/Lolprodraft-1280x720.jpg">
     <div class="horizontal-container">
         <div class="description left">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse
-                lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.
-                Maecenas
-                ligula massa, varius a, semper congue, euismod non, mi.
+                Je n'ai pas inventé le concept de prodraft mais j'ai voulu le modernisé et le mettre à jour, il a une
+                utilité pour les utilisateurs qui font des tournois amateurs.
+                J'ai voulu essayer de créer un jeu, pour apprendre une nouvelle techno et un nouveau langage, en partant
+                d'un univers que je connais bien et éviter de créer un énième jeu de morpion ou d'échec.
+                <br><br>
+                J'ai pris une approche mono-repo avec 3 sous dossiers : common, backend et frontend en utilisant <b>Next
+                    JS</b> pour les vues. J'ai eu du mal au début avec les sockets en prod' mais avec un peu d'huile de
+                coude j'ai réussi à le faire fonctionner comme je voulais.
             </p>
         </div>
         <div class="spacer-vertical"></div>
         <div class="description right">
-            <p class="no-margin">
-                <u>Technos :</u> Lorem , Lorem , Lorem, Lorem.
+            <p>
+                <u>Technos :</u> Next JS , Socket io , Docker, Caddy, OVH.
             </p>
-            <a href="www.google.fr"> Site url </a>
+            <a href="https://lolprodraft.com/">lolprodraft.com/</a>
             <br>
-            <a href="www.github.com">github url</a>
+            <a href="https://github.com/La-Kiks/prodraft-lol">Github repo</a>
         </div>
     </div>
 </section>

@@ -8,7 +8,7 @@ import { RouterModule } from '@angular/router';
   styleUrl: './card.component.scss'
 })
 export class CardComponent {
-  @Input() thumbnail: string = 'Placeholder';
+  @Input() thumbnail: string = 'Route to image';
   @Input() numero: string = '01';
   @Input() title: string = 'Card One';
   @Input() description: string = 'Placeholder description';

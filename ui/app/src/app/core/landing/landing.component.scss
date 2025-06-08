@@ -29,6 +29,16 @@ a > svg {
   margin-top: 0.5rem;
 }
 
+.small-description {
+  max-width: 640px;
+}
+
+.small-description > span {
+  font-weight: 500;
+  background-color: $primary-color;
+  padding: 0rem;
+}
+
 .flex {
   display: flex;
   flex-direction: row;
@@ -79,9 +89,11 @@ a > svg {
 }
 
 .profile {
-  width: auto;
-  min-width: 300px; // TODO
-  height: 200px;
+  width: 250px;
+  height: 250px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
 }
 
 .simple-btn {

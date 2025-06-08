@@ -1,38 +1,36 @@
 <section class="project-background">
     <app-default-button route="/" label="Back" backgroundColor="#DC143C" textColor='#fffff0'></app-default-button>
-    <h2> Project One </h2>
-    <p><span>Small text</span></p>
+    <h2>Antibug Solutions</h2>
+    <p><span>Améliorations du site Symfony d'un client</span></p>
     <div class="spacer-horizontal"></div>
-    <div class="demo">640 x 360</div>
+    <img class="demo" src="/Antibug-1280x720.jpg">
     <div class="horizontal-container">
         <div class="description left">
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse
-                lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.
-                Maecenas
-                ligula massa, varius a, semper congue, euismod non, mi.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse
-                lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.
-                Maecenas
-                ligula massa, varius a, semper congue, euismod non, mi.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse
-                lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.
-                Maecenas
-                ligula massa, varius a, semper congue, euismod non, mi.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse
-                lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam.
-                Maecenas
-                ligula massa, varius a, semper congue, euismod non, mi.
-            </p>
+            <p>Mission réalisée en freelance sur Malt. Voici la liste des modifications apportées :</p>
+            <ul>
+                <li>
+                    <u>Optimisation de la page listant les interventions :</u><br>
+                    - Correction d'un problème de type N+1 requête SQL : passage <b>de +6000 </b>requêtes à
+                    <b>seulement 2.</b><br>
+                    - Passage du composant <b>"DataTables"</b> en <b>"server-side processing"</b> : réduction de
+                    la charge client <b>de ~400Mo à ~4Mo</b>, rendant la page fluide et rapide.<br>
+                </li>
+                <li>
+                    <u>Ajout d'un classement mensuel des factures :</u> <br>
+                    - Intégration d'un menu déroulant dynamique ainsi que d'une requête <b>SQL</b> adaptée.
+                </li>
+                <li><u>Mise à jour technique du framework :</u><br>
+                    - Migration Symfony 5.3 vers <b>Symfony 5.4</b> avec résolution de bugs, nettoyage du code
+                    et <b>re-factorisation</b> partielle pour améliorer la maintenabilité.
+                </li>
+            </ul>
         </div>
         <div class="spacer-vertical"></div>
         <div class="description right">
             <p class="no-margin">
-                <u>Technos :</u> Lorem , Lorem , Lorem, Lorem.
+                <u>Technos :</u> Symfony 5.4 , SQL , Hostinger.
             </p>
-            <a href="www.google.fr"> Site url </a>
-            <br>
-            <a href="www.github.com">github url</a>
+
         </div>
     </div>
 </section>
