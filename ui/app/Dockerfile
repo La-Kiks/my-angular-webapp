@@ -10,4 +10,7 @@ RUN ng build --configuration=production
 
 FROM nginx:stable AS final
 EXPOSE 80
+
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
 COPY --from=build src/dist/app/browser  /usr/share/nginx/html
