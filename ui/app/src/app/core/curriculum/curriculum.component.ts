@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+
 
 @Component({
   selector: 'app-curriculum',
@@ -7,5 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './curriculum.component.scss'
 })
 export class CurriculumComponent {
+  constructor(private TitleService: Title) { }
+
+  ngOnInit() {
+    this.TitleService.setTitle("curriculum");
+  }
 
 }
