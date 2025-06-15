@@ -11,9 +11,9 @@ export const routes: Routes = [
   { path: '', component: LandingComponent },
   { path: 'curriculum', component: CurriculumComponent },
   { path: 'about', component: ProposComponent },
-  { path: 'project-one', component: ProjectOneComponent },
-  { path: 'project-two', component: ProjectTwoComponent },
-  { path: 'project-three', component: ProjectThreeComponent },
-  { path: 'project-four', component: ProjectFourComponent },
+  { path: 'antibug-solutions', component: ProjectOneComponent },
+  { path: 'portfolio', component: ProjectTwoComponent },
+  { path: 'prodrafts', component: ProjectThreeComponent },
+  { path: 'cooldowns', component: ProjectFourComponent },
   // { path: '', redirectTo: '/landing', pathMatch: 'full' }  // Optional: Redirect to 'new' by default
 ];

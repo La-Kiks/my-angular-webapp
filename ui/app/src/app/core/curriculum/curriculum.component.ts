@@ -12,7 +12,7 @@ export class CurriculumComponent {
   constructor(private TitleService: Title) { }
 
   ngOnInit() {
-    this.TitleService.setTitle("curriculum");
+    this.TitleService.setTitle("Curriculum");
   }
 
 }

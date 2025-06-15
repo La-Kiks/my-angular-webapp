@@ -12,7 +12,7 @@ export class ProjectOneComponent {
   constructor(private titleService: Title) { }
 
   ngOnInit() {
-    this.titleService.setTitle('Project One');
+    this.titleService.setTitle('Antibug Solutions');
   }
 
 }

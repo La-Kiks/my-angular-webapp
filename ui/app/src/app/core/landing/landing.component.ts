@@ -38,10 +38,10 @@ export class LandingComponent {
 
   buttons = ['Antibug Solutions', 'Portfolio', 'Prodrafts', 'Cooldowns'];
   cards = [
-    { thumbnail: "/Antibug-1280x360.jpg", numero: "01", title: "Antibug Solutions", description: "Améliorations apportées au site d'un client. Optimisation d'une page lente, de plus d'une minute de chargement à moins d'une seconde, ajouts de fonctionnalités et mise à jour de Symfony.", url: "project-one" },
-    { thumbnail: "/Portfolio-1280x360.jpg", numero: "02", title: "Portfolio", description: "Le site sur  lequel vous êtes, fait avec Symfony dans un premier temps où je me suis permis de tester et d'implémenter de nombreuses fonctionnalités du framework. Puis refait avec .NET et Angular afin d'élargir mes compétences !", url: "project-two" },
-    { thumbnail: "/Lolprodraft-1280x360.jpg", numero: "03", title: "Prodraft", description: "Un jeu tour par tour qui utilise les websockets pour simuler une draft comme l'on peut trouver dans le jeu League of Legends. 100% Typescript, Next.", url: "project-three" },
-    { thumbnail: "/Lolcooldowns-1280x360.jpg", numero: "04", title: "Cooldowns", description: "Mon tout premier site qui répond à un besoin des joueurs de League of Legends à trouver des informations tactiques. Le site a eu  une petite popularité sur  Reddit à son lancement avec 30k utilisateurs mensuels. PHP 8.2 et Symfony 7.", url: "project-four" }
+    { thumbnail: "/Antibug-1280x360.jpg", numero: "01", title: "Antibug Solutions", description: "Améliorations apportées au site d'un client. Optimisation d'une page lente, de plus d'une minute de chargement à moins d'une seconde, ajouts de fonctionnalités et mise à jour de Symfony.", url: "antibug-solutions" },
+    { thumbnail: "/Portfolio-1280x360.jpg", numero: "02", title: "Portfolio", description: "Le site sur  lequel vous êtes, fait avec Symfony dans un premier temps où je me suis permis de tester et d'implémenter de nombreuses fonctionnalités du framework. Puis refait avec .NET et Angular afin d'élargir mes compétences !", url: "portfolio" },
+    { thumbnail: "/Lolprodraft-1280x360.jpg", numero: "03", title: "Prodraft", description: "Un jeu tour par tour qui utilise les websockets pour simuler une draft comme l'on peut trouver dans le jeu League of Legends. 100% Typescript, Next.", url: "prodrafts" },
+    { thumbnail: "/Lolcooldowns-1280x360.jpg", numero: "04", title: "Cooldowns", description: "Mon tout premier site qui répond à un besoin des joueurs de League of Legends à trouver des informations tactiques. Le site a eu  une petite popularité sur  Reddit à son lancement avec 30k utilisateurs mensuels. PHP 8.2 et Symfony 7.", url: "cooldowns" }
 
   ];
 

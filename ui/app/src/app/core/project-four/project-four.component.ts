@@ -12,7 +12,7 @@ export class ProjectFourComponent {
   constructor(private titleService: Title) { }
 
   ngOnInit() {
-    this.titleService.setTitle('Project Four');
+    this.titleService.setTitle('Cooldowns');
   }
 
 }
