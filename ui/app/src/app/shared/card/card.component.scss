@@ -84,8 +84,11 @@ body {
 
 .main .card .content p {
   text-align: left;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 300;
+  margin: 0 auto;
+  line-height: 1.5;
+  color: #333;
 }
 
 .main .card .content a {

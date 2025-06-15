@@ -31,7 +31,26 @@ a > svg {
 }
 
 .small-description {
+  text-align: left;
   max-width: 640px;
+  margin: 0 auto;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+
+  p {
+    margin-bottom: 1.2rem;
+  }
+
+  strong {
+    color: #c0392b;
+    font-weight: 600;
+  }
+
+  em {
+    font-style: italic;
+    color: #555;
+  }
 }
 
 .small-description > span {
@@ -44,12 +63,14 @@ a > svg {
   display: flex;
   flex-direction: row;
   padding: $base-padding;
+  padding-bottom: 0;
 }
 
 .flex-col {
   display: flex;
   flex-direction: column;
   padding: $base-padding;
+  padding-bottom: 0;
 }
 
 .top {
@@ -120,6 +141,57 @@ a > svg {
 
 .card-container {
   position: relative;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  margin: auto;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+.contact-btn {
+  max-height: 60px;
+  width: auto;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background-color: #c0392b;
+  color: $light-yellow;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.contact-btn:hover {
+  background-color: $background-color;
+  color: $text-color;
+}
+
+.propos-btn {
+  max-height: 60px;
+  width: auto;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.9rem;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background-color: $background-color;
+  color: $text-color;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.propos-btn:hover {
+  background-color: $primary-color;
+  color: $text-color;
 }
 
 @media (max-width: 765px) {

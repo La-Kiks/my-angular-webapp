@@ -3,19 +3,36 @@ import { CardComponent } from '../../shared/card/card.component';
 import { NgFor } from '@angular/common';
 import { TypedTextComponent } from "../../shared/typed-text/typed-text.component";
 import { Title } from '@angular/platform-browser';
+import { ContactModalComponent } from '../../features/contact-modal/contact-modal.component';
+import { Router } from '@angular/router';
 
 
 @Component({
   selector: 'app-landing',
-  imports: [CardComponent, NgFor, TypedTextComponent],
+  imports: [CardComponent, NgFor, TypedTextComponent, ContactModalComponent],
   templateUrl: './landing.component.html',
   styleUrl: './landing.component.scss'
 })
 export class LandingComponent {
-  constructor(private TitleService: Title) { }
+  constructor(private TitleService: Title, private router: Router) { }
 
   ngOnInit() {
     this.TitleService.setTitle("kilian-au");
+  }
+
+
+  goToPropos() {
+    this.router.navigate(['/about']);
+  }
+
+  showModal = false;
+
+  openModal() {
+    this.showModal = true;
+  }
+
+  handleClose() {
+    this.showModal = false;
   }
 
 
