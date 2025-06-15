@@ -99,3 +99,51 @@ section > p > span {
   font-weight: 400;
   margin-bottom: 0.25rem;
 }
+
+b {
+  font-weight: 600;
+}
+
+@media (max-width: 765px) {
+  .project-background {
+    padding: 0.25rem;
+  }
+
+  .demo {
+    height: auto;
+    max-width: 375px;
+    margin: auto;
+  }
+
+  .horizontal-container {
+    flex-direction: column;
+  }
+
+  .spacer-vertical {
+    width: 200px;
+    height: 1px;
+    margin: 10px auto;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    p,
+    ul,
+    ul li {
+      font-size: inherit; // optional, keeps it consistent
+    }
+  }
+
+  .description li {
+    padding: 4px 0;
+  }
+
+  .description.right {
+    margin: 5px 2px;
+    align-self: self-start;
+  }
+
+  .return-button {
+    display: none;
+  }
+}

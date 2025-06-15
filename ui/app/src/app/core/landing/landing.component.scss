@@ -15,6 +15,7 @@
 
 .title-lg {
   font-size: 3rem;
+  width: 440px;
 }
 
 .font-stack {
@@ -115,4 +116,51 @@ a > svg {
 .simple-btn.active {
   background-color: $primary-color;
   color: $text-color;
+}
+
+.card-container {
+  position: relative;
+}
+
+@media (max-width: 765px) {
+  .title,
+  .title-lg {
+    width: auto;
+  }
+  .description > .flex {
+    flex-direction: column;
+  }
+
+  .flex-col > h1 {
+    font-size: xx-large;
+  }
+
+  .small-description {
+    font-size: 0.9rem;
+  }
+
+  .profile {
+    margin: auto;
+  }
+
+  .projects > .project-header {
+    margin: auto;
+    justify-content: center;
+  }
+
+  .button-group {
+    width: 340px;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 25px;
+  }
+
+  .button-group button {
+    flex: 1 1 120px;
+  }
+
+  .card-container {
+    position: relative;
+    min-height: auto;
+  }
 }

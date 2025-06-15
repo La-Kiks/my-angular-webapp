@@ -1,4 +1,4 @@
-<section>
+<section class="description">
     <div class="flex space">
         <div class="flex-col top">
             <h1 class="font-stack no-margin title-lg">Kilian Audroin</h1>
@@ -12,8 +12,8 @@
         <img class="profile" src="/profile-pic-ki-250p.jpg" srcset="/profile-pic-ki.jpg 2x" alt="A profile picture">
     </div>
 </section>
-<section>
-    <div class="flex mx-auto title no-margin no-padding">
+<section class="projects">
+    <div class="project-header flex mx-auto title no-margin no-padding">
         <a> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="15 18 9 12 15 6" />
@@ -33,7 +33,7 @@
         </button>
 
     </div>
-    <div style="position: relative;" *ngFor="let card of cards; let i = index">
+    <div class="card-container" *ngFor="let card of cards; let i = index">
         <app-card [class.active]="selectedCard === i" [class.exit]="exitingCard === i" [thumbnail]="card.thumbnail"
             [numero]="card.numero" [title]="card.title" [description]="card.description" [url]="card.url">
         </app-card>

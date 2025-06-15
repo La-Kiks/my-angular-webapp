@@ -26,3 +26,9 @@
     opacity: 0;
   }
 }
+
+@media (max-width: 765px) {
+  #text-container {
+    font-size: xx-large;
+  }
+}
