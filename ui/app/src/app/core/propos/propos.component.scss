@@ -155,3 +155,27 @@ b {
     display: none;
   }
 }
+
+.app-wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+  transform-origin: top center;
+  transition: transform 0.3s ease-in-out;
+
+  // Scale up on larger screens
+  @media (min-width: 1400px) {
+    transform: scale(1.2);
+  }
+
+  @media (min-width: 1800px) {
+    transform: scale(1.5);
+  }
+
+  @media (min-width: 2400px) {
+    transform: scale(1.8);
+  }
+
+  @media (min-width: 3200px) {
+    transform: scale(2);
+  }
+}

@@ -1,52 +1,57 @@
-<section class="description">
-    <div class="flex space">
-        <div class="flex-col top">
-            <h1 class="font-stack no-margin title-lg">Kilian Audroin</h1>
-            <app-typed-text></app-typed-text>
-            <p class="small-description">J'accompagne les projets web en tant que développeur full stack, soit sur une
-                stack <span>Symfony/PHP</span>, soit sur
-                une stack <span>.NET/Angular.</span> Porté par la curiosité et la qualité, je m'engage à livrer un code
-                fiable et
-                évolutif.</p>
-        </div>
-        <div class="contact-container">
-            <img class="profile" src="/profile-pic-ki-250p.jpg" srcset="/profile-pic-ki.jpg 2x" alt="A profile picture">
-            <div class="btn-container">
-                <button class="contact-btn" (click)="openModal()">Me contacter</button>
+<section class="app-wrapper">
+    <section class="description">
+        <div class="flex space">
+            <div class="flex-col top">
+                <h1 class="font-stack no-margin title-lg">Kilian Audroin</h1>
+                <app-typed-text></app-typed-text>
+                <p class="small-description">J'accompagne les projets web en tant que développeur full stack, soit sur
+                    une
+                    stack <span>Symfony/PHP</span>, soit sur
+                    une stack <span>.NET/Angular.</span> Porté par la curiosité et la qualité, je m'engage à livrer un
+                    code
+                    fiable et
+                    évolutif.</p>
+            </div>
+            <div class="contact-container">
+                <img class="profile" src="/profile-pic-ki-250p.jpg" srcset="/profile-pic-ki.jpg 2x"
+                    alt="A profile picture">
+                <div class="btn-container">
+                    <button class="contact-btn" (click)="openModal()">Me contacter</button>
 
-                <app-contact-modal [visible]="showModal" (closed)="handleClose()" [email]="'kilian.audroin@gmail.com'"
-                    [discord]="'kiki_was_here'">
-                </app-contact-modal>
+                    <app-contact-modal [visible]="showModal" (closed)="handleClose()"
+                        [email]="'kilian.audroin@gmail.com'" [discord]="'kiki_was_here'">
+                    </app-contact-modal>
 
-                <button class="propos-btn" (click)="goToPropos()"> &Agrave; propos</button>
+                    <button class="propos-btn" (click)="goToPropos()"> &Agrave; propos</button>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<section class="projects">
-    <div class="project-header flex mx-auto title no-margin no-padding">
-        <a> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="15 18 9 12 15 6" />
-            </svg>
-        </a>
-        <h2 class="font-mono"><u>Projects</u></h2>
-        <a> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="9 18 15 12 9 6" />
-            </svg>
-        </a>
-    </div>
-    <div class="button-group flex mx-auto title space no-margin no-padding">
-        <button *ngFor="let btn of buttons; index as i" class="simple-btn" [class.active]="selectedButton === i"
-            (click)="selectCard(i)">
-            {{ btn }}
-        </button>
+    </section>
+    <section class="projects">
+        <div class="project-header flex mx-auto title no-margin no-padding">
+            <a> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="15 18 9 12 15 6" />
+                </svg>
+            </a>
+            <h2 class="font-mono"><u>Projects</u></h2>
+            <a> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="9 18 15 12 9 6" />
+                </svg>
+            </a>
+        </div>
+        <div class="button-group flex mx-auto title space no-margin no-padding">
+            <button *ngFor="let btn of buttons; index as i" class="simple-btn" [class.active]="selectedButton === i"
+                (click)="selectCard(i)">
+                {{ btn }}
+            </button>
 
-    </div>
-    <div class="card-container" *ngFor="let card of cards; let i = index">
-        <app-card [class.active]="selectedCard === i" [class.exit]="exitingCard === i" [thumbnail]="card.thumbnail"
-            [numero]="card.numero" [title]="card.title" [description]="card.description" [url]="card.url">
-        </app-card>
-    </div>
+        </div>
+        <div class="card-container" *ngFor="let card of cards; let i = index">
+            <app-card [class.active]="selectedCard === i" [class.exit]="exitingCard === i" [thumbnail]="card.thumbnail"
+                [numero]="card.numero" [title]="card.title" [description]="card.description" [url]="card.url">
+            </app-card>
+        </div>
+    </section>
 </section>
