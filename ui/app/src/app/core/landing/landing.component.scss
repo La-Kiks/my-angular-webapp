@@ -1,262 +1,42 @@
 @use "variables" as *;
 
-.primary-color {
-  color: $primary-color;
-}
-
-.bg-primary-color {
-  background-color: $primary-color;
-  padding: 0.25rem;
-}
-
-.font-mono {
-  font-family: $font-mono;
-}
-
-.title-lg {
-  font-size: 3rem;
-  width: 440px;
-}
-
-.font-stack {
-  font-family: $font-stack;
-}
-
-.hover-primary:hover {
-  color: $primary-hover;
-}
-
-a > svg {
-  margin-top: 0.5rem;
-}
-
-.small-description {
-  text-align: left;
-  max-width: 640px;
-  margin: 0 auto;
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #333;
-
-  p {
-    margin-bottom: 1.2rem;
-  }
-
-  strong {
-    color: #c0392b;
-    font-weight: 600;
-  }
-
-  em {
-    font-style: italic;
-    color: #555;
-  }
-}
-
-.small-description > span {
-  font-weight: 500;
-  background-color: $primary-color;
-  padding: 0rem;
-}
-
-.flex {
+section {
+  background-color: $bento-bg;
   display: flex;
-  flex-direction: row;
-  padding: $base-padding;
-  padding-bottom: 0;
-}
-
-.flex-col {
-  display: flex;
-  flex-direction: column;
-  padding: $base-padding;
-  padding-bottom: 0;
-}
-
-.top {
-  justify-content: start;
-  align-items: start;
-}
-
-.no-margin {
-  margin: 0px;
-}
-
-.no-padding {
-  padding: 0px;
-}
-
-.space {
-  justify-content: space-around;
-}
-
-.center {
-  align-items: center;
   justify-content: center;
+  padding: 2%;
+  min-height: 96dvh;
+  min-width: 90%;
 }
 
-.mx-base {
-  margin-right: $base-margin;
-  margin-left: $base-margin;
+.grid-container {
+  font-size: 1.5rem;
+  min-width: 100%;
+  display: grid;
+  font-family: $font-primary;
+  grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+  grid-template-rows: 1fr 4fr 2fr 2fr;
+  gap: 2rem;
+  grid-template-areas:
+    "header header header header header"
+    "catchphrase catchphrase catchphrase picture projects"
+    "details details contact contact projects"
+    "details details socials socials projects";
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
+.box {
+  background-color: $bento-primary;
+  border-radius: 20px;
 }
 
-.title {
-  width: $sd-width;
-  align-items: center;
+.contact {
+  background-color: $bento-secondary;
 }
 
-.profile {
-  width: 250px;
-  height: 250px;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  object-fit: cover;
-}
-
-.simple-btn {
-  padding: 0.4rem 0.8rem;
-  font-size: 0.9rem;
-  border: 1px solid #333;
-  border-radius: 6px;
-  background-color: $background-color;
-  color: $text-color;
-  cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.simple-btn:hover {
-  background-color: $primary-color;
-  color: $text-color;
-}
-
-.simple-btn.active {
-  background-color: $primary-color;
-  color: $text-color;
-}
-
-.card-container {
-  position: relative;
-}
-
-.contact-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10px;
-  margin: auto;
-}
-
-.btn-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
+.picture {
   width: 100%;
-}
-
-.contact-btn {
-  max-height: 60px;
-  width: auto;
-  padding: 0.4rem 0.8rem;
-  font-size: 0.9rem;
-  border: 1px solid #333;
-  border-radius: 6px;
-  background-color: #c0392b;
-  color: $light-yellow;
-  cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.contact-btn:hover {
-  background-color: $background-color;
-  color: $text-color;
-}
-
-.propos-btn {
-  max-height: 60px;
-  width: auto;
-  padding: 0.4rem 0.8rem;
-  font-size: 0.9rem;
-  border: 1px solid #333;
-  border-radius: 6px;
-  background-color: $background-color;
-  color: $text-color;
-  cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease;
-}
-
-.propos-btn:hover {
-  background-color: $primary-color;
-  color: $text-color;
-}
-
-@media (max-width: 765px) {
-  .title,
-  .title-lg {
-    width: auto;
-  }
-  .description > .flex {
-    flex-direction: column;
-  }
-
-  .flex-col > h1 {
-    font-size: xx-large;
-  }
-
-  .small-description {
-    font-size: 0.9rem;
-  }
-
-  .profile {
-    margin: auto;
-  }
-
-  .projects > .project-header {
-    margin: auto;
-    justify-content: center;
-  }
-
-  .button-group {
-    width: 340px;
-    flex-wrap: wrap;
-    display: flex;
-    gap: 25px;
-  }
-
-  .button-group button {
-    flex: 1 1 120px;
-  }
-
-  .card-container {
-    position: relative;
-    min-height: auto;
-  }
-}
-
-.app-wrapper {
-  max-width: 1080px;
-  margin: 0 auto;
-  transform-origin: top center;
-  transition: transform 0.3s ease-in-out;
-
-  // Scale up on larger screens
-  @media (min-width: 1400px) {
-    transform: scale(1.2);
-  }
-
-  @media (min-width: 1800px) {
-    transform: scale(1.5);
-  }
-
-  @media (min-width: 2400px) {
-    transform: scale(1.8);
-  }
-
-  @media (min-width: 3200px) {
-    transform: scale(2);
-  }
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
 }
