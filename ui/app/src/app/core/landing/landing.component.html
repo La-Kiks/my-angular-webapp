@@ -31,7 +31,8 @@
                     <img [src]="project.arrow" alt="arrow icon">
                 </a>
                 <img style="grid-area: image;" [src]="project.image" [alt]="'image of ' + project.title"
-                    [style.display]="isProjectActive(i) ? 'block' : 'none'">
+                    [style.display]="isProjectActive(i) ? 'block' : 'none'" [style.cursor]="'pointer'"
+                    (click)="navigateToProject(project.url)">
             </div>
         </div>
 

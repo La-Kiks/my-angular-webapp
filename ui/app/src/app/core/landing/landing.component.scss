@@ -15,6 +15,23 @@ section {
   }
 }
 
+strong {
+  font-style: $font-bold;
+}
+
+em {
+  font-style: $font-italic;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
 .grid-container {
   font-size: $text-base;
   min-width: 100%;
@@ -60,15 +77,6 @@ section {
 .box {
   background-color: $bento-primary;
   border-radius: 20px;
-}
-
-button {
-  all: unset;
-  cursor: pointer;
-
-  &:hover {
-    transform: scale(1.1);
-  }
 }
 
 .header {
@@ -222,10 +230,10 @@ button {
   all: unset;
   font-family: $font-light;
   font-size: $text-xl;
+  cursor: pointer;
 }
 
 h2.clickable {
-  cursor: pointer;
   transition: color 0.2s ease;
 
   &:hover {
@@ -257,12 +265,4 @@ h2.clickable {
 
 .project-container a[style*="arrow"] {
   transition: opacity 0.3s ease;
-}
-
-strong {
-  font-style: $font-bold;
-}
-
-em {
-  font-style: $font-italic;
 }

@@ -64,14 +64,16 @@ export class LandingComponent {
     }
   ];
 
-  // Method to handle project title clicks
   selectProject(index: number): void {
     this.activeProjectIndex = index;
   }
 
-  // Method to check if a project is active
   isProjectActive(index: number): boolean {
     return this.activeProjectIndex === index;
+  }
+
+  navigateToProject(url: string): void {
+    window.open(url, '_blank');
   }
 
 }
