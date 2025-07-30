@@ -7,6 +7,12 @@ section {
   padding: 2%;
   min-height: 96dvh;
   min-width: 90%;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+    min-height: auto;
+    min-width: 95%;
+  }
 }
 
 .grid-container {
@@ -22,6 +28,33 @@ section {
     "catchphrase catchphrase catchphrase picture projects"
     "details details contact contact projects"
     "details details socials socials projects";
+
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    gap: 1.5rem;
+    grid-template-areas:
+      "header header"
+      "catchphrase picture"
+      "catchphrase picture"
+      "projects projects"
+      "details contact"
+      "socials socials";
+  }
+
+  @media (max-width: 500px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, auto);
+    gap: 1rem;
+    grid-template-areas:
+      "header"
+      "catchphrase"
+      "picture"
+      "projects"
+      "details"
+      "contact"
+      "socials";
+  }
 }
 
 .box {
@@ -146,6 +179,17 @@ button {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  min-height: 100px;
+}
+
+.socials > a {
+  all: unset;
+  font-family: $font-light;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 .projects {
@@ -158,6 +202,61 @@ button {
 
 .projects > div {
   border-bottom: 2px solid $bento-secondary;
+}
+
+.project-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+  margin: auto;
+  padding: 1rem 0rem;
+  gap: 1rem;
+  grid-template-areas:
+    "title arrow "
+    "image image";
+}
+
+.project-container > h2 {
+  all: unset;
+  font-family: $font-light;
+  font-size: $text-xl;
+}
+
+h2.clickable {
+  cursor: pointer;
+  transition: color 0.2s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+  }
+}
+
+.project-container > a {
+  cursor: pointer;
+  justify-self: flex-end;
+  padding: 1rem;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.project-container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.project-container img[style*="image"] {
+  transition: opacity 0.3s ease;
+}
+
+.project-container a[style*="arrow"] {
+  transition: opacity 0.3s ease;
 }
 
 strong {
