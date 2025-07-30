@@ -20,6 +20,7 @@
   flex-direction: row;
   margin: auto;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-family: $font-primary;
 }
 
 b {
@@ -82,7 +83,7 @@ b {
 
 .head {
   margin: 0;
-  padding: 0;
+  padding: 1rem 0rem;
 }
 
 .head h1 {
@@ -106,7 +107,7 @@ b {
 .exp-item,
 .grid-item {
   background-color: white;
-  padding: 0.5rem;
+  padding: 1rem 0.5rem;
 }
 
 .grid-item h4,

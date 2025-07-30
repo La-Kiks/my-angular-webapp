@@ -1,32 +1,65 @@
 <section>
     <div class="grid-container">
-        <header class="box" style="grid-area: header;">
+        <div class="box header" style="grid-area: header;">
             <div>
-                Name
+                <em>KILIAN</em> <strong>AUDROIN</strong>
             </div>
             <div>
-                Right side
+                <button (click)="goToPropos()">&Agrave; PROPOS</button>
             </div>
-        </header>
-        <div class="box" style="grid-area: catchphrase;">
-            catchphrase
         </div>
+
+        <div class="box catchphrase" style="grid-area: catchphrase;">
+            <img src="/images/Flower.png" alt="flower icon">
+            <div>
+                <strong>Web developper</strong> & <em>freelance</em>
+            </div>
+        </div>
+
         <div class="box" style="grid-area: picture;">
             <img class="picture" src="/images/profile-pic-ki.jpg" alt="A profile picture">
         </div>
-        <div class="box" style="grid-area: projects;">
-            Projects
+
+        <div class="box projects" style="grid-area: projects;">
+            <div>
+                <h2>Antibug solutions</h2>
+                <img src="/images/Antibug-1280x360.jpg">
+                <a><img src="/images/Arrow.png"></a>
+
+            </div>
+            <div>Portfolio</div>
+            <div>Draft game</div>
+            <div>Cooldowns</div>
         </div>
-        <div class="box" style="grid-area: details;">
-            Details
+
+        <div class="box details" style="grid-area: details;">
+            <img src="/images/circle-icon.png" alt="circle icon">
+            <div>
+                J'accompagne les projets web en tant que développeur full stack, soit sur une stack
+                <strong>Symfony/PHP</strong>, soit sur une stack <strong>.NET/Angular.</strong> Porté par la curiosité
+                et la
+                qualité, je m'engage à livrer un code fiable et évolutif.
+            </div>
         </div>
-        <div class="box contact" style="grid-area: contact;">
-            Contact
+
+        <div (click)="openModal()" class="box contact" style="grid-area: contact;">
+            <div>
+                <p>Have some questions ?</p>
+                <img src="/images/Arrow.png" alt="arrow icon">
+            </div>
+            <p>Me contacter</p>
         </div>
-        <div class="box" style="grid-area: socials;">
-            Socials
+
+
+        <div class="box socials" style="grid-area: socials;">
+            <div>SOCIAL</div>
+            <div>SOCIAL</div>
+            <div>SOCIAL</div>
         </div>
     </div>
+    <app-contact-modal [visible]="showModal" (closed)="handleClose()" [email]="'kilian.audroin@gmail.com'"
+        [discord]="'kiki_was_here'">
+    </app-contact-modal>
 </section>
 
 

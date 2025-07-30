@@ -20,7 +20,6 @@ export class LandingComponent {
     this.TitleService.setTitle("kilian-au");
   }
 
-
   goToPropos() {
     this.router.navigate(['/about']);
   }
@@ -36,6 +35,8 @@ export class LandingComponent {
   }
 
 
+
+  // Older main version
   buttons = ['Antibug Solutions', 'Portfolio', 'Prodrafts', 'Cooldowns'];
   cards = [
     { thumbnail: "/Antibug-1280x360.jpg", numero: "01", title: "Antibug Solutions", description: "Améliorations apportées au site d'un client. Optimisation d'une page lente, de plus d'une minute de chargement à moins d'une seconde, ajouts de fonctionnalités et mise à jour de Symfony.", url: "antibug-solutions" },
