@@ -8,10 +8,10 @@ section {
   min-height: 96dvh;
   min-width: 90%;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1100px) {
     padding: 1rem;
     min-height: auto;
-    min-width: 95%;
+    min-width: 90%;
   }
 }
 
@@ -257,6 +257,11 @@ h2.clickable {
   height: 100%;
   object-fit: cover;
   border-radius: 20px;
+
+  @media (max-width: 1100px) {
+    width: 90%;
+    object-position: center;
+  }
 }
 
 .project-container img[style*="image"] {
